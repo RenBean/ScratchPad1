@@ -1,7 +1,5 @@
 package week1;
 
-import static java.lang.System.*;
-
 /**
  * Created by Ari on 7/11/16.
  */

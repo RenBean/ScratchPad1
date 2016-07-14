@@ -35,7 +35,8 @@ public class School {
         Student s = new Student();
         System.out.println(s.getClass());
 
-
+        Parent p =new Parent();
+        System.out.println(p.getHasStudent());
 
     }
 }
