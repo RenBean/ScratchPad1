@@ -21,7 +21,8 @@ public class Day1Palindrome {
                 if(inputString.equalsIgnoreCase("exit")){
                     break;
                 }
-                System.out.println(isPalindromeArrayLoop(inputString));
+                System.out.println(isPalindromeStringBuilder(inputString));
+                //System.out.println(isPalindromeArrayLoop(inputString));
 //                if(isPalindromeArrayLoop(inputString)){
 //                    System.out.println("True");
 //                } else {
@@ -55,7 +56,13 @@ public class Day1Palindrome {
         boolean isPalindrome = false;
         //reverse inputString using StringBuilder and see if it matches itself
 
+        StringBuilder inputStringCopy = new StringBuilder();
+        inputStringCopy.append(inputString);
+        inputStringCopy = inputStringCopy.reverse();
+        if(inputString.equalsIgnoreCase(inputStringCopy.toString())){
+            isPalindrome = true;
 
+        }
 
         return isPalindrome;
     }
