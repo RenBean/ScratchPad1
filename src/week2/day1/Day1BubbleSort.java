@@ -11,20 +11,24 @@ public class Day1BubbleSort {
 
         //print array before sorting using bubble sort algorithm
         System.out.println("Array Before Bubble Sort");
-        // TODO: loop through the array and print the values
+        for (int num : intArray) {
+        System.out.println(num);
+        }
 
         System.out.println(" "); // just adding a space for readability
 
         //sort an array using bubble sort algorithm
-        bubbleSort(intArray);
+        intArray = bubbleSort(intArray);
 
         //print array after sorting using bubble sort algorithm
         System.out.println("Array After Bubble Sort");
-        // TODO: loop through the array and print the values
+        for (int num : intArray) {
+            System.out.println(num);
+        }
 
     }
 
-    private static void bubbleSort(int[] intArray) {
+    private static int[] bubbleSort(int[] intArray) {
 
         /*
          * In bubble sort, we basically traverse the array from first
@@ -46,8 +50,25 @@ public class Day1BubbleSort {
          * Repeat the same steps for array[1] to array[n-1]
          *
          */
+        int arrayLength = intArray.length;
+        int temp = 0;
 
-        // TODO: logic goes here
+        for(int i = 0; i < arrayLength; i++){
+            //study this ! nested loops ! and arrays
+            for(int j = 1; j < (arrayLength - i); j++) {
+                    if(intArray[j-1] > intArray[j]) {
+                        temp = intArray[j - 1];
+                        intArray[j - 1] = intArray[j];
+                        intArray[j] = temp;
+                    }
+
+            }
+
+
+        }
+        return intArray;
+
 
     }
 }
+
