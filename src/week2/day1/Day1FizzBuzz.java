@@ -32,7 +32,6 @@ public class Day1FizzBuzz {
                 }
                 if (returnThis.isEmpty()) {
                     System.out.println(count);
-                    System.out.println(count);
                 } else {
                     System.out.println(returnThis);
                 }
