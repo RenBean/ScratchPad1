@@ -27,6 +27,7 @@ public class Loops {
 //  }
 
     // for loops: Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+    // int boolean counter incrementer
     public void forLoop() {
         for(int i = 0; i < numbers.length; i++) {
             //everything that is in the while loop; is in the for loop!
