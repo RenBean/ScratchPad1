@@ -1,4 +1,4 @@
-package toolBox.collection;
+package toolBox;
 
 /**
  * Created by Ari on 7/21/16.
