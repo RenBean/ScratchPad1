@@ -62,27 +62,7 @@ public class RobotMode {
         player1Choice = randomSelection1();
     }
 
-    public static String randomSelection2() {
-        int min = 1;
-        int max = 3;
-        String randomSelection2;
-        Random random = new Random(System.currentTimeMillis());
-        int randomNumber = random.nextInt((max - min) +1) +min;
-        if(randomNumber == 1) {
-            randomSelection2 = "rock";
-            System.out.println("Vulcan has selected Rock");
 
-        } else if (randomNumber == 2) {
-            randomSelection2 = "paper";
-            System.out.println("Vulcan has selected Paper");
-
-        } else {
-            randomSelection2 = "scissors";
-            System.out.println("Vulcan has selected Scissors");
-
-        }
-        return randomSelection2;
-    }
 
 
 
@@ -120,7 +100,27 @@ public class RobotMode {
             }
     }
 
+    public static String randomSelection2() {
+        int min = 1;
+        int max = 3;
+        String randomSelection2;
+        Random random = new Random(System.currentTimeMillis());
+        int randomNumber = random.nextInt((max - min) +1) +min;
+        if(randomNumber == 1) {
+            randomSelection2 = "rock";
+            System.out.println("Vulcan has selected Rock");
 
+        } else if (randomNumber == 2) {
+            randomSelection2 = "paper";
+            System.out.println("Vulcan has selected Paper");
+
+        } else {
+            randomSelection2 = "scissors";
+            System.out.println("Vulcan has selected Scissors");
+
+        }
+        return randomSelection2;
+    }
 
     // How will you make computer's selection random?
     //    (hint: you have already done this in several programs

@@ -20,30 +20,7 @@ public class Day3RockPaperScissors {
         d3rps.decideWinner();
     }
 
-    private void setPlayerChoices() {
-        Scanner scanner = new Scanner(System.in);
-        player1Choice="";
 
-        while (!(player1Choice.equalsIgnoreCase("rock") || player1Choice.equalsIgnoreCase("paper") || player1Choice.equalsIgnoreCase("scissors"))) {
-            System.out.println("Lets play a game...\nMake your selection \"Rock\" \"Paper\" or \"Scissors\"?");
-            player1Choice = scanner.nextLine();
-
-            if (player1Choice.equalsIgnoreCase("rock")) {
-                System.out.println("You have selected the Rock");
-            } else if (player1Choice.equalsIgnoreCase("paper")) {
-                System.out.println("You have selected the Paper");
-            } else if (player1Choice.equalsIgnoreCase("scissors")) {
-                System.out.println("You have selected the Scissors");
-            } else {
-                System.out.println("Invalid selection");
-            }
-        }
-
-
-        // The game should then randomly select the computer's (player 2) selection
-        player2Choice = randomSelection();
-
-    }
 
     private void decideWinner() {
         // Using the rules of Rock-Paper-Scissors, decide which player wins
@@ -91,6 +68,31 @@ public class Day3RockPaperScissors {
             System.out.println("Computer has selected Scissors");
         }
         return randomSelection;
+    }
+
+    private void setPlayerChoices() {
+        Scanner scanner = new Scanner(System.in);
+        player1Choice="";
+
+        while (!(player1Choice.equalsIgnoreCase("rock") || player1Choice.equalsIgnoreCase("paper") || player1Choice.equalsIgnoreCase("scissors"))) {
+            System.out.println("Lets play a game...\nMake your selection \"Rock\" \"Paper\" or \"Scissors\"?");
+            player1Choice = scanner.nextLine();
+
+            if (player1Choice.equalsIgnoreCase("rock")) {
+                System.out.println("You have selected the Rock");
+            } else if (player1Choice.equalsIgnoreCase("paper")) {
+                System.out.println("You have selected the Paper");
+            } else if (player1Choice.equalsIgnoreCase("scissors")) {
+                System.out.println("You have selected the Scissors");
+            } else {
+                System.out.println("Invalid selection");
+            }
+        }
+
+
+        // The game should then randomly select the computer's (player 2) selection
+        player2Choice = randomSelection();
+
     }
 
 }
