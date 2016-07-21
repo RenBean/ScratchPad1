@@ -8,7 +8,7 @@ public class Day4InfiniteLoop {
         boolean shouldLoopEnd = false;
         int targetNumber = (int) (Math.random() * 100);
         System.out.println ("The target number is: " + targetNumber);
-        while (true) {
+        while (!shouldLoopEnd) { /// origonally while (true){
             int guessNumber = (int) (Math.random() * 100);
             System.out.println ("The loop guesses: " + guessNumber);
             if (guessNumber == targetNumber) {
@@ -21,5 +21,6 @@ public class Day4InfiniteLoop {
             }
         }
     }
+
 
 }
