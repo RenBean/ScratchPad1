@@ -1,9 +1,10 @@
 package thinkJava;
 
 /**
+ *
  * Created by Ari on 7/19/16.
  */
-public class Data {
+public class Date {
     public static void main (String[]args){
         String day="Thursday";
         int date=16;

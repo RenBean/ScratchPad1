@@ -39,7 +39,7 @@ public class Day2FixNSwitchStatement {
                 switch (branch) // LINE C
                 {
                     case 'C':
-                        System.out.println("Data structures, Java, Computer Organization");
+                        System.out.println("Date structures, Java, Computer Organization");
                         break;
                     case 'E':
                         System.out.println("Micro processors, Logic switching theory");

@@ -29,10 +29,7 @@ public class RickRockPaperScissors2 {
     }
 
     private void decideWinner() {
-        // Using the rules of Rock-Paper-Scissors, decide which player wins
-        //    (rule: rock beats scissors)
-        //    (rule: paper beats Rock)
-        //    (rule: scissors beats Paper)
+
         String winnerAnnouncement;
         String winner;
         if(player1Choice.equalsIgnoreCase("rock") && player2Choice.equalsIgnoreCase("scissors")) {
@@ -58,7 +55,7 @@ public class RickRockPaperScissors2 {
             winner = "tie";
         }
         wins.add(winner);
-        // Print out who won in this format: "Player: ROCK vs Computer: SCISSORS ----- PLAYER WINS"
+
         System.out.println(winnerAnnouncement);
     }
 
@@ -91,9 +88,6 @@ public class RickRockPaperScissors2 {
         System.out.println("Scissors Used: "+scissorsCount+" times");
     }
 
-
-    // How will you make computer's selection random?
-    //    (hint: you have already done this in several programs
     public String randomSelection() {
         int min = 1;
         int max = 3;

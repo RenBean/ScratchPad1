@@ -3,12 +3,15 @@ package thinkJava;
 import java.util.Scanner;
 
 /**
+ * using scanner functions: get input; replay input received
  * Created by Ari on 7/20/16.
  */
 public class Echo {
     public static void main (String[] args){
-        String line;
+
         Scanner in = new Scanner(System.in);
+
+        String line = in.nextLine();
 
         System.out.print("Type random something here: ");
         line = in.nextLine();
@@ -18,10 +21,5 @@ public class Echo {
         line = in.nextLine();
         System.out.println("You also said: "+line);
 
-        int inch;
-        double cm;
-
-        System.out.print("How many inches? ");
-        inch = in.nextInt();
     }
 }
