@@ -11,15 +11,16 @@ public class Echo {
 
         Scanner in = new Scanner(System.in);
 
-        String line = in.nextLine();
+        String line1;
+        String line2;
 
         System.out.print("Type random something here: ");
-        line = in.nextLine();
-        System.out.println("You said: " + line);
+        line1 = in.nextLine();
+        System.out.println("You said: " + line1);
 
         System.out.print("Type something more here: ");
-        line = in.nextLine();
-        System.out.println("You also said: "+line);
+        line2 = in.nextLine();
+        System.out.println("First you said: "+line1+"\nand then you said "+line2);
 
     }
 }

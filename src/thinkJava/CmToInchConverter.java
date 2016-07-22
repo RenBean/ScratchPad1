@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Converts centimeters to feet and inches.
  * Created by Ari on 7/22/16.
  */
-public class Convert {
+public class CmToInchConverter {
 
     public static void main (String[]args){
         double cm;
